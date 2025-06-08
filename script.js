@@ -156,34 +156,34 @@ style.textContent = `
 document.head.appendChild(style);
 
 // Mobile menu toggle (for future enhancement)
-function createMobileMenu() {
-    const navMenu = document.querySelector('.nav-menu');
-    const hamburger = document.createElement('button');
-    hamburger.className = 'mobile-menu-toggle';
-    hamburger.innerHTML = '<i class="fas fa-bars"></i>';
-    hamburger.style.display = 'none';
-    hamburger.style.background = 'none';
-    hamburger.style.border = 'none';
-    hamburger.style.fontSize = '24px';
-    hamburger.style.color = '#6366f1';
-    hamburger.style.cursor = 'pointer';
+//function createMobileMenu() {
+//    const navMenu = document.querySelector('.nav-menu');
+//    const hamburger = document.createElement('button');
+//    hamburger.className = 'mobile-menu-toggle';
+//    hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+//    hamburger.style.display = 'none';
+//    hamburger.style.background = 'none';
+//    hamburger.style.border = 'none';
+//    hamburger.style.fontSize = '24px';
+//    hamburger.style.color = '#6366f1';
+//    hamburger.style.cursor = 'pointer';
     
     // Insert hamburger before nav menu
-    navMenu.parentNode.insertBefore(hamburger, navMenu);
+//    navMenu.parentNode.insertBefore(hamburger, navMenu);
     
     // Show hamburger on mobile
-    const mediaQuery = window.matchMedia('(max-width: 768px)');
-    function handleMobileMenu(e) {
-        if (e.matches) {
-            hamburger.style.display = 'block';
-        } else {
-            hamburger.style.display = 'none';
-        }
-    }
+//    const mediaQuery = window.matchMedia('(max-width: 768px)');
+//    function handleMobileMenu(e) {
+//        if (e.matches) {
+//            hamburger.style.display = 'block';
+//        } else {
+//            hamburger.style.display = 'none';
+//        }
+//    }
     
-    mediaQuery.addListener(handleMobileMenu);
-    handleMobileMenu(mediaQuery);
-}
+//    mediaQuery.addListener(handleMobileMenu);
+//    handleMobileMenu(mediaQuery);
+//}
 
 // Initialize mobile menu
-document.addEventListener('DOMContentLoaded', createMobileMenu);
+//document.addEventListener('DOMContentLoaded', createMobileMenu);
